@@ -10,14 +10,11 @@
         a.nav-link(href='#') Contact
     .main
       .main-info
-        button(@click='show = !show') Mostrar/Ocultar
         transition(name="aparecer" )
           h1(v-if='show',v-text='mensajes.transicion')
         transition(name='animacion' appear)
           p(v-if='mostrar', v-text='mensajes.animacion') 
         a(v-on:click='mostrar = !mostrar') LEARN MORE
-    Features
-    About(:nombre='autor')
    
 </template>
 
@@ -92,7 +89,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("https://pixabay.com/get/eb32b6062cfd083ed1534705fb0938c9bd22ffd41cb0164692f5c37da6/building-2779499_1920.jpg");
+  background: url("https://pixabay.com/get/ea35b40d2af0053ed1534705fb0938c9bd22ffd41cb0194191f0c878af/adult-3052244_1920.jpg");
   background-position: center;
   background-repeat: no-repeat;
 
