@@ -1,23 +1,22 @@
 <template lang='pug'>
-  .section
-      button(v-on:click='ver = !ver') mostrar/ocultar
+  .section#cursos
+      //- button(v-on:click='ver = !ver') mostrar/ocultar
       transition(name='transicion')
-        h1(v-if='ver', v-text='mensaje.cursos')
+        h1 CURSOS QUE OFRECEMOS
       .section-contents
         .section-contents-info
-          img(src='../assets/imagen1.jpg')
-          h2 READING ONLINE E-BOOKS
+          .img
+          h2 LECTURA EN LÍNEA DE LIBROS 
           p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
         .section-contents-info
-          img(src='../assets/imagen2.jpg')
-          h2 ONLINE TUTORIAL WITH EXAMPLE
+          .img.imagen2
+          h2 TUTORIAL EN LÍNEA CON EJEMPLO
           p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
         .section-contents-info
-          img(src='../assets/imagen3.jpg')
-          h2 STUDY WITH EASE
+          .img.imagen3
+          h2 ESTUDIAR CON FACILIDAD
           p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s
-      input(type='text' placeholder='Indroducir un curso')
-      input(type='button' value='Enviar Tarea' v-on:click='AgregarTarea')
+      
       //- pre{{data}}
 
 
@@ -26,15 +25,15 @@
 <script>
 export default {
 
-  data(){
-    return {
-      ver: "true",
-      mensaje: {
-        cursos: 'COURSES WE OFFER ...'
-      }
+  // data(){
+  //   return {
+  //     ver: "true",
+  //     mensaje: {
+  //       cursos: 'COURSES WE OFFER ...'
+  //     }
       
-    }
-  }
+  //   }
+  // }
 }
 </script>
 
@@ -66,10 +65,11 @@ export default {
       width: 100%;
       display: grid;
       grid-template-columns: repeat(3,1fr);
-      grid-template-rows: 50%;
+      // grid-template-rows: 50%;
       // grid-template-columns: 30% 30% 30%;
       grid-column-gap: 2em;
       justify-items: center;
+      align-content: center;
       // align-items: center;
 
       &-info{
@@ -99,10 +99,23 @@ export default {
           font-size: 17px;
           
         }
-        & img{
-        width: 100%;
-        height: auto;
-        display: block;
+        & .img{
+          height: 230px;
+          width: 100%;
+          margin: auto;
+          display: block;
+          background-image: url('http://demos.templatetoaster.com/educate/wp-content/uploads/sites/128/2016/03/102.jpg');
+          background-repeat: none;
+          background-size: cover;
+          background-position: center;
+        }
+
+        & .imagen2{
+          background-image: url('http://demos.templatetoaster.com/educate/wp-content/uploads/sites/128/2016/03/104.jpg');
+        }
+
+        & .imagen3{
+          background-image: url('http://demos.templatetoaster.com/educate/wp-content/uploads/sites/128/2016/03/106.jpg');
         }
 
       }

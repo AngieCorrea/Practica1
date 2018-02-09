@@ -1,17 +1,18 @@
 <template lang='pug'>
-  .description
+  .description#caracteristicas
       .description-info
         h2 50 +
-        p COURSES WE PROVIDE
+        p CURSOS QUE OFRECEMOS
       .description-info
         h2 500 +
-        p TUTORIAL EXAMPLE
+        p EJEMPLO TUTORIAL
       .description-info
         h2 200 +
-        p EXPERT TEAM MEMBERS
+        p MIEMBROS DEL EQUIPO EXPERTO
       .description-info
         h2 200 +
-        p EYEARS OF EXPERIENCE
+        p AÑOS DE EXPERIENCIA
+
 </template>
 
 <script>

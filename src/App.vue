@@ -1,13 +1,14 @@
 <template lang='pug'>
   #app
     Home
-    Courses
-    Description
     Info
+    Description
+    Courses
     Contact
     Articule
     Asider
     Footer
+    Practicando
 </template>
 
 
@@ -23,15 +24,22 @@ import Asider from './components/Asider'
 import Courses from './components/Courses'
 import Footer from './components/Footer'
 
+
 export default {
   components: {Home,Description,Info,Contact,Articule,Asider,Footer,Courses},
 
   name: 'app',
   data () {
     return {
-   
+      
     }
   }
 }
 </script>
 
+<style>
+  *{
+
+    font-family: 'Roboto', sans-serif;
+  }
+</style>

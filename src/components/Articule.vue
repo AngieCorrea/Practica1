@@ -1,23 +1,24 @@
 <template lang='pug'>
   .articule
-      h1 OUR BLOG 
+      h1 NUESTRO BLOG
       .articule-container
         .articule-container-info
-          img(src='../assets/imagen5.jpg')
+          img(src='http://demos.templatetoaster.com/educate/wp-content/uploads/sites/128/2016/03/109.jpg')
           .fecha
-            p 11 December, 2015
+            p 8 Febrero, 2018
             p Lorem Ipsum Dummy Text
-          h2 Difference of Education now-a-days
+          h2 Diferencia de educación ahora
           p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-          a READ MORE 
+          a LEE MAS
+
         .articule-container-info
-          img(src='../assets/imagen6.jpg')
+          img(src='http://demos.templatetoaster.com/educate/wp-content/uploads/sites/128/2016/03/110.jpg')
           .fecha
-            p 11 December, 2015
+            p 8 Febrero, 2018
             p Lorem Ipsum Dummy Text
-          h2 Online Tutorial Sites help Learn easily
+          h2 Los sitios de tutoriales en línea ayudan a aprender fácilmente
           p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-          a READ MORE 
+          a LEE MAS
 </template>
 
 <script>

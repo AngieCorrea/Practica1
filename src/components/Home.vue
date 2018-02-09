@@ -1,20 +1,21 @@
 <template lang='pug'>
   .container
     nav.nav 
-      img.nav-logo(src='../assets/menulogo.png')
+      a(href='#')
+        .nav-logo
       ul.nav-item
-        a.nav-link(href='#') Home
-        a.nav-link(href='#') About Us
-        a.nav-link(href='#') Features
-        a.nav-link(href='#') Courses
-        a.nav-link(href='#') Contact
+        a.nav-link(href='#') Inicio
+        a.nav-link(href='#nosotros') Nosotros
+        a.nav-link(href='#caracteristicas') Caracteristicas
+        a.nav-link(href='#cursos') Cursos
+        a.nav-link(href='#contactos') Contactos
     .main
       .main-info
         transition(name="aparecer" )
-          h1(v-if='show',v-text='mensajes.transicion')
+          h1 PROPORCIONAMOS CURSOS EN LÍNEA
         transition(name='animacion' appear)
           p(v-if='mostrar', v-text='mensajes.animacion') 
-        a(v-on:click='mostrar = !mostrar') LEARN MORE
+        a(v-on:click='mostrar = !mostrar') APRENDE MÁS
    
 </template>
 
@@ -27,10 +28,10 @@ export default {
   // name: 'app',
   data() {
     return {
+      alumnos: [],
       mostrar: "true",
       show: "true",
       mensajes: {
-        transicion: "WE PROVIDE ONLINE COURSES",
         animacion:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
       }
@@ -59,9 +60,17 @@ export default {
   z-index: 100;
   width: 100%;
   background: white;
+  
 
   &-logo {
-    width: 12%;
+    background-image: url("http://demos.templatetoaster.com/educate/wp-content/themes/theme-00103/menulogo.png");
+    background-repeat: no-repeat;
+    display: block;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    width: 300px;
+    height: 80px;
   }
 
   &-item {
@@ -69,14 +78,18 @@ export default {
   }
 
   &-link {
-    padding: 1em;
+    padding: .4em;
     color: white;
+    margin-left: 1em;
     text-decoration: none;
     text-transform: uppercase;
     color: black;
+    transition: color .3s, background .5s;
 
     &:hover {
-      color: rgb(134, 188, 66);
+      color: #fff;
+      background: rgb(134, 188, 66);
+      border-radius: 3%;
     }
   }
 }
@@ -89,7 +102,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("https://pixabay.com/get/ea35b40d2af0053ed1534705fb0938c9bd22ffd41cb0194191f0c878af/adult-3052244_1920.jpg");
+  background: url("https://pixabay.com/get/ea36b7092bf01c22d9584518a33219c8b66ae3d018b9104292f0c170/notebook-336634_1920.jpg");
   background-position: center;
   background-repeat: no-repeat;
 
@@ -135,6 +148,7 @@ export default {
 
     & h1 {
       text-align: center;
+      font-family: 'cursive';
 
       &:after {
         content: "";
@@ -160,9 +174,10 @@ export default {
       padding: 0.5em;
       border-radius: 1%;
       cursor: pointer;
-
+      transition: background .5s;
       &:hover {
         background: rgb(56, 69, 79);
+        
       }
     }
   }
