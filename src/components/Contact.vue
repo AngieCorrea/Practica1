@@ -3,7 +3,7 @@
       .contacts-info
         h1 CONTACTATE CON NOSOTROS
         p  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-        a(href='#contactos') CONTACTANOS
+        a(href='#contactos') CONTÁCTANOS
 </template>
 
 <script>
@@ -42,7 +42,7 @@ export default {
      
       & a{
         background: rgb(134, 188, 66);
-        text-decoration: none;
+        text-decoration: none;  
         color: white;
         display: inline-block;
         padding: .5em;

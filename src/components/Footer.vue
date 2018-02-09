@@ -10,8 +10,6 @@
           icon(name='instagram')
         a(href='https://twitter.com/iniciarsesion' target='_blank')
           icon(name='twitter')
-        a(href='https://accounts.snapchat.com/accounts/welcome' target='_blank')
-          icon(name='snapchat')
         a(href='https://github.com/AngieCorrea' target='_blank')
           icon(name='github')
         

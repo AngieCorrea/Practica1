@@ -5,7 +5,7 @@
         p CURSOS QUE OFRECEMOS
       .description-info
         h2 500 +
-        p EJEMPLO TUTORIAL
+        p EJEMPLOs CON TUTORIAL
       .description-info
         h2 200 +
         p MIEMBROS DEL EQUIPO EXPERTO
